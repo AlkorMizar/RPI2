@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Comfortaa', cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background-size: cover;
+  color: #FFFBDE;
+
+  margin: 0px;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("assets/images/overlay.png");  
+  transition: background-image 1s ease-in-out;
+}
+
+
+#time {
+  font-size: 8rem;
+}
+
+#dayOfWeek, #date{
+  opacity: 0.8;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  font-size: 1.5rem; 
+}
+
+h1 {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+div.sim-slider {
+  top: 0; 
+  position: absolute;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.fa{
+  display: inline;
+  opacity: 0.6;
+}
+
+.fa:hover {
+  opacity: 1.0;
+}
+
+#weather{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width:10%;
+  background: #eee;
+  color: black;
+  font-weight: 1000;
+  font-size: .75rem;
+  opacity: 0.4;
+  padding: 0.6em;
+  border-radius: 1em;
+}
+
+.quote {
+  width:80%;
+  background: #eee;
+  color: black;
+  font-weight: 600;
+  font-size: .75rem;
+  opacity: 0.6;
+  padding: 0.6em;
+  border-radius: 1em;
+}
+.quote figcaption,
+.quote blockquote {
+
+  margin: 1em;
+}
+.quote figcaption {
+  text-align: right;
+}
+.btn {
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 50%;
+  background-image: url("https://www.pngarts.com/files/7/Update-Button-PNG-Image.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: grayscale(.8);
+  margin: 10px;
+}
+.btn:hover {
+  filter: grayscale(.2);
+}
+.btn:active,
+.btn:focus {
+  outline: 0;
+}
+.btn:active{
+  transform: scale(1.02)
+}
+
+
+@media (max-width: 700px) {
+  
+  h1 {
+    width:80%;
+    font-size: 2rem;
+  }
+
+  h2 {
+    width:80%;
+    font-size: 1rem;
+  }
+
+  .quote {
+    font-size: .7rem;   
+    width:80%;
+  }
+  #time {
+    font-size: 3.5rem;
+  }
+  #dayOfWeek, #date{
+    font-size: 0.8rem; 
+  }
+  #weather{
+    width:20%;
+  }
+}
